@@ -19,15 +19,20 @@
   justify-content: flex-end;
 }
 .home header ul.navTop li {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 .home header ul.navTop li a {
   color: #8d8d8d;
   text-decoration: none;
+  font-size: 14px;
 }
 .home header ul.navTop li a i {
   margin: 0 5px;
   color: #009cff;
+}
+.home header ul.navTop li a:hover {
+  color: white;
+  text-decoration: underline;
 }
 .home header .navBottom {
   width: 80%;
@@ -83,13 +88,17 @@
   font-size: 20px;
   margin: 30px 0;
 }
+.home .jumbotron .jumboInfo .offert {
+  font-size: 18px;
+}
 .home .jumbotron .jumboInfo .offert span {
-  font-weight: 900;
+  font-weight: 600;
   color: #c70eb8;
 }
 .home .jumbotron .jumboInfo .offert p {
   color: #c70eb8;
   margin: 5px 0 20px 0;
+  font-size: 18px;
 }
 .home .jumbotron .jumboInfo .offert button {
   font-size: 22px;
