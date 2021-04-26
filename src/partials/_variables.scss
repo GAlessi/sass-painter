@@ -2,10 +2,13 @@
 $barsColorGrey: rgb(141,141,141);
 $barsColorWhite: white;
 $iconColor: rgb(0,156,255);
+$offertColor: rgb(199,14,184);
 
 $bgBars: black;
 
 $widthContainer: 80%;
+
+$jumboFontSize: 20px;
 
 @mixin flex {
     display: flex;

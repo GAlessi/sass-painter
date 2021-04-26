@@ -68,9 +68,36 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.home .jumbotron .jumboInfo {
+  font-size: 20px;
+  padding: 60px 0 0 10%;
+}
 .home .jumbotron .jumboInfo img {
   width: auto;
-  height: 60px;
+  height: 50px;
+}
+.home .jumbotron .jumboInfo p {
+  font-size: 20px;
+  margin: 30px 0;
+}
+.home .jumbotron .jumboInfo .offert span {
+  font-weight: 900;
+  color: #c70eb8;
+}
+.home .jumbotron .jumboInfo .offert p {
+  color: #c70eb8;
+  margin: 5px 0 20px 0;
+}
+.home .jumbotron .jumboInfo .offert button {
+  font-size: 22px;
+  padding: 10px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+}
+.home .jumbotron .jumboInfo .offert button:last-child {
+  background-color: inherit;
+  color: black;
 }
 
 * {
