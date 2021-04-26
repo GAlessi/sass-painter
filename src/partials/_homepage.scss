@@ -5,7 +5,8 @@
     header{
         @include flex;
         flex-direction: column;
-        padding: 10px 0;
+        height: 100px;
+        padding-top: 10px;
         background-color: $bgBars;
 
         ul.navTop{
@@ -24,16 +25,14 @@
                         color: $iconColor;
                     }
                 }
+
             }
         }
 
 
         .navBottom{
 
-            @include flex;
-            align-items: baseline;
             width: $widthContainer;
-            color: $barsColorWhite;
 
             img{
                 height: 25px;
@@ -42,6 +41,7 @@
             ul{
                 @include flex;
                 justify-content: flex-start;
+                align-items: baseline;
                 flex-wrap: wrap;
 
                 li{
@@ -54,6 +54,17 @@
                             font-size: 12px;
                         }
                     }
+
+                    &:hover{
+                        background-color: white;
+                    }
+
+                    &:first-child:hover{
+                        background-color: black;
+                    }
+                    &:hover a{
+                        color: black;
+                    }
                 }
             }
         }
@@ -64,8 +75,7 @@
         width: 100%;
         height: 450px;
         background-image: url('img/bg-painter-home.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include BgImg;
 
         .jumboInfo{
             font-size: $jumboFontSize;
@@ -134,6 +144,7 @@
                     text-decoration: none;
                     color: black;
                     background-color: white;
+
                     img{
                         width: 100%;
                         height: auto;
@@ -156,6 +167,10 @@
                         .link{
                             color: $linksColor;
                         }
+                    }
+
+                    &:hover .link{
+                        text-decoration: underline;
                     }
                 }
             }
@@ -196,8 +211,7 @@
 
                 .squareImg{
                     @include square;
-                    background-size: cover;
-                    background-repeat: no-repeat;
+                    @include BgImg;
 
                     img{
                         width: 70%;
@@ -240,15 +254,17 @@
 
     //Regole del footer
     .preFooter{
-        padding: 80px;
+        padding: 80px 0 20px 0;
         background-color: $BgPreFooter;
 
         .preFooterContainer{
             @include flex;
             width: $widthContainer;
             justify-content: space-between;
+            align-items: flex-start;
             span{
-                font-size: 20px;
+                font-size: 15px;
+                font-weight: 400;
             }
 
             li{
@@ -256,9 +272,85 @@
 
                 a{
                     color: black;
+                    font-size: 12px;
                     line-height: 40px;
                     &:hover{
                         text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .social{
+            @include flex;
+            width: $widthContainer;
+            justify-content: flex-end;
+            margin-top: 20px;
+            li{
+                @include flex;
+                margin:0 10px 0 0;
+                width: 30px;
+                height: 30px;
+
+                i{
+                    font-size: 18px;
+                    color: white;
+                }
+            }
+
+            #instagram{
+                background-color: rgb(228,64,95);
+            }
+            #facebook{
+                background-color: rgb(59,89,152);
+            }
+            #twitter{
+                background-color: rgb(29,161,242);
+            }
+            #youtube{
+                background-color: rgb(205,32,31);
+            }
+            #pinterest{
+                background-color: rgb(189,8,28);
+            }
+            #rss{
+                background-color: rgb(255,141,0);
+            }
+        }
+    }
+
+    footer{
+        background-color: $bgBars;
+        height: 100px;
+
+        .footerContainer{
+            @include flex;
+            justify-content: space-between;
+            width: $widthContainer;
+            height: 100%;
+
+            .partners{
+                img{
+                    margin: 0 15px;
+                }
+            }
+
+            ul{
+                list-style: none;
+                font-size: 14px;
+                li{
+                    display: inline-block;
+                    margin: 0 10px;
+
+                    a{
+                        color: $barsColorGrey;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+
+                    span{
+                        color: white;
                     }
                 }
             }

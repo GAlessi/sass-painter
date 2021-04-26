@@ -35,3 +35,8 @@ $jumboFontSize: 20px;
     width: 50%;
     height: 350px;
 }
+
+@mixin BgImg {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
