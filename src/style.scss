@@ -1,5 +1,3 @@
-@import "partials/variables";
-@import "partials/homepage";
 
 *{
     margin: 0;
@@ -10,3 +8,6 @@
 li{
     list-style: none;
 }
+
+@import "partials/variables";
+@import "partials/homepage";

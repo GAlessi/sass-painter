@@ -5,7 +5,7 @@ body{
 
 .home{
 
-    //regole header
+    //Regole header
     header{
         @include flex;
         flex-direction: column;
@@ -24,11 +24,10 @@ body{
                     color: $barsColorGrey;
                     text-decoration: none;
                     i{
-                        margin-right: 5px;
+                        margin: 0 5px;
                         color: $iconColor;
                     }
                 }
-
             }
         }
 
@@ -115,5 +114,60 @@ body{
         }
     }
 
+    //Regole main
+    main{
+        background-color: $bgMain;
+        padding: 30px 0;
 
+        .paintingPossibility{
+            width: $widthContainer;
+            margin: auto;
+            h2{
+                text-align: center;
+                font-weight: 400;
+                font-size: 32px;
+                margin: 20px 0;
+            }
+
+            .row{
+                @include flex;
+                justify-content: space-between;
+
+                .module{
+                    width: 30%;
+                    text-decoration: none;
+                    color: black;
+                    background-color: white;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .moduleInfo{
+                        padding: 20px;
+
+                        h3{
+                            margin: 5px 0;
+
+                            span{
+                                color: $linksColor;
+                            }
+                        }
+
+                        p{
+                            margin-bottom: 20px;
+                        }
+                        .link{
+                            color: $linksColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        .squares{
+            width: $widthContainer;
+
+        }
+    }
 }

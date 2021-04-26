@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
 body {
   background-color: purple;
 }
@@ -27,7 +37,7 @@ body {
   text-decoration: none;
 }
 .home header ul.navTop li a i {
-  margin-right: 5px;
+  margin: 0 5px;
   color: #009cff;
 }
 .home header .navBottom {
@@ -99,13 +109,52 @@ body {
   background-color: inherit;
   color: black;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.home main {
+  background-color: #e8e8e8;
+  padding: 30px 0;
 }
-
-li {
-  list-style: none;
+.home main .paintingPossibility {
+  width: 80%;
+  margin: auto;
+}
+.home main .paintingPossibility h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  margin: 20px 0;
+}
+.home main .paintingPossibility .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.home main .paintingPossibility .row .module {
+  width: 30%;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+.home main .paintingPossibility .row .module img {
+  width: 100%;
+  height: auto;
+}
+.home main .paintingPossibility .row .module .moduleInfo {
+  padding: 20px;
+}
+.home main .paintingPossibility .row .module .moduleInfo h3 {
+  margin: 5px 0;
+}
+.home main .paintingPossibility .row .module .moduleInfo h3 span {
+  color: #009cff;
+}
+.home main .paintingPossibility .row .module .moduleInfo p {
+  margin-bottom: 20px;
+}
+.home main .paintingPossibility .row .module .moduleInfo .link {
+  color: #009cff;
+}
+.home main .squares {
+  width: 80%;
 }
