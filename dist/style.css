@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: auto;
   flex-direction: column;
   padding: 10px 0;
   background-color: black;
@@ -26,6 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: auto;
   width: 80%;
   justify-content: flex-end;
 }
@@ -45,6 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: auto;
   align-items: baseline;
   width: 80%;
   color: white;
@@ -57,6 +60,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: auto;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -128,6 +132,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: auto;
   justify-content: space-between;
 }
 .home main .paintingPossibility .row .module {
@@ -157,4 +162,61 @@ body {
 }
 .home main .squares {
   width: 80%;
+  margin: 80px auto;
+}
+.home main .squares .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.home main .squares .row .squareText {
+  width: 50%;
+  height: 350px;
+  padding: 50px 50px 0 40px;
+  color: white;
+}
+.home main .squares .row .squareText h2 {
+  font-size: 28px;
+}
+.home main .squares .row .squareText p {
+  margin: 20px 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+.home main .squares .row .squareText button {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 8px 15px;
+}
+.home main .squares .row .squareImg {
+  width: 50%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home main .squares .row .squareImg img {
+  width: 70%;
+  height: auto;
+}
+.home main .squares .wacom .squareText {
+  background-color: #3c1567;
+}
+.home main .squares .wacom .squareImg {
+  background-image: url("img/wacom-painter.jpg");
+}
+.home main .squares .master .squareText {
+  background-color: #3c3c3c;
+}
+.home main .squares .master .squareImg {
+  background-image: url("img/painter-master.jpg");
+}
+.home main .squares .business .squareText {
+  background-color: #0072bc;
+}
+.home main .squares .business .squareImg {
+  background-image: url("img/business-education.jpg");
 }
