@@ -1,0 +1,23 @@
+
+$barsColorGrey: rgb(141,141,141);
+$barsColorWhite: white;
+$iconColor: rgb(0,156,255);
+
+$bgBars: black;
+
+$widthContainer: 80%;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@mixin bars {
+    padding: 10px;
+    background-color: $mainColor;
+    color: $barsColor;
+    height: 50px;
+    width: 100%;
+}
